@@ -15,7 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Use Docker
-        run: ./build-gh-actions.sh
+        run: |
+          chmod a+x ./build-gh-actions.sh
+          ./build-gh-actions.sh
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
