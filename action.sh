@@ -1,7 +1,5 @@
-mkdir action
-cp -R . action
-rm -rf action/action
-
+mkdir ~/action
+cp -R . ~/action
 git init
 git remote add origin https://github.com/QuirinEcker/actions-test.git
 git add .
